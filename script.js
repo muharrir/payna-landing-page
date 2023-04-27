@@ -31,3 +31,17 @@ sunIcon.addEventListener("click", () => {
 moonIcon.addEventListener("click", () => {
   themeSwitch();
 });
+
+const backToTopButton = document.getElementById("back-to-top-btn");
+
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 200) {
+    backToTopButton.classList.remove("hidden");
+  } else {
+    backToTopButton.classList.add("hidden");
+  }
+});
+
+backToTopButton.addEventListener("click", () => {
+  window.scrollTo(0, 0);
+});
