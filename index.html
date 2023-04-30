@@ -23,14 +23,17 @@
         </div>
         <!-- List menu -->
         <div class="space-x-12 hidden lg:flex">
-          <a href="#" class="font-semibold">Home</a>
-          <a href="#">Features</a>
-          <a href="#">Showcase</a>
-          <a href="#">Pricing</a>
+          <a href="#" id="home" class="">Home</a>
+          <a href="#" id="features" class="">Features</a>
+          <a href="#" id="showcase" class="">Showcase</a>
+          <a href="#" id="pricing" class="">Pricing</a>
         </div>
         <!-- Button SignIn -->
         <div class="items-center gap-3 text-black md:flex">
-          <button class="hidden rounded-full px-12 py-3 bg-whiteBlue md:flex">
+          <button
+            class="hidden rounded-full px-12 py-3 bg-whiteBlue md:flex"
+            id="signin"
+          >
             Sign In
           </button>
           <button>
@@ -88,11 +91,13 @@
           required any finance skills or knowledge before
         </p>
         <div class="md:flex md:justify-center lg:justify-start">
-          <button
-            class="rounded-full bg-blueOcean px-11 py-3 text-white font-semibold"
-          >
-            Get Sarted
-          </button>
+          <a href="#information">
+            <button
+              class="rounded-full bg-blueOcean px-11 py-3 text-white font-semibold"
+            >
+              Get Sarted
+            </button>
+          </a>
         </div>
       </div>
       <!-- Right Section -->
@@ -319,7 +324,7 @@
     <!-- END: BRAND SECTION -->
 
     <!-- START: INFORMATION HEADER -->
-    <div class="mt-20 md:mt-[130px]">
+    <div class="mt-20 md:mt-[130px]" id="information">
       <h3 class="text-red font-bold text-center">WORK BETTER</h3>
       <h2 class="mt-[6px] font-bold text-[28px] text-center dark:text-white">
         For Your Business
@@ -432,12 +437,15 @@
         >
           <form>
             <input
+              id="email"
               type="text"
+              name="email"
               placeholder="Email Address"
               class="rounded-full bg-whiteBlue w-full py-4 px-6 text-grey leading-tight focus:outline-none md:w-auto"
             />
           </form>
           <button
+            id="emailSubmit"
             class="rounded-full bg-blueOcean w-full py-3 mt-3 text-white font-semibold justify-center md:mt-0 md:px-11 md:w-auto md:py-3.5"
           >
             Get Started

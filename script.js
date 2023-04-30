@@ -32,6 +32,7 @@ moonIcon.addEventListener("click", () => {
   themeSwitch();
 });
 
+//Button back to top
 const backToTopButton = document.getElementById("back-to-top-btn");
 
 window.addEventListener("scroll", () => {
@@ -45,3 +46,25 @@ window.addEventListener("scroll", () => {
 backToTopButton.addEventListener("click", () => {
   window.scrollTo(0, 0);
 });
+
+//Button SignIn
+const buttonSignIn = document.getElementById("signin");
+
+buttonSignIn.addEventListener("click", () => {
+  alert("directed to sign in page");
+});
+
+//Email
+const email = document.getElementById("email");
+const submitButton = document.getElementById("emailSubmit");
+
+submitButton.addEventListener("click", () => {
+  alert(`Terimakasi ${email.value} sudah input email kamu`);
+});
+
+//Navbar
+const home = document.getElementById("home");
+const features = document.getElementById("features");
+const showcase = document.getElementById("showcase");
+const pricing = document.getElementById("pricing");
+const isActive = true;
