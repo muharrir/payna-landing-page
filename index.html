@@ -31,7 +31,7 @@
         <!-- Button SignIn -->
         <div class="items-center gap-3 text-black md:flex">
           <button
-            class="hidden rounded-full px-12 py-3 bg-whiteBlue md:flex"
+            class="hidden rounded-full px-12 py-3 bg-whiteBlue hover:bg-white md:flex"
             id="signin"
           >
             Sign In
@@ -93,7 +93,7 @@
         <div class="md:flex md:justify-center lg:justify-start">
           <a href="#information">
             <button
-              class="rounded-full bg-blueOcean px-11 py-3 text-white font-semibold"
+              class="rounded-full bg-blueOcean hover:bg-blueOcean/90 px-11 py-3 text-white font-semibold"
             >
               Get Sarted
             </button>
@@ -120,9 +120,18 @@
     <!-- Back to top button -->
     <button
       id="back-to-top-btn"
-      class="hidden fixed bottom-4 right-4 z-50 bg-blueOcean p-5 text-white rounded-full hover:bg-blueOcean/80"
+      class="fixed bottom-6 right-6 z-50 bg-blueOcean w-16 h-16 items-center justify-center flex rounded-full hover:bg-blueOcean/80"
     >
-      <span class="material-icons w-9 pt-1"> arrow_upward </span>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="30px"
+        viewBox="0 0 24 24"
+        width="30px"
+        class="fill-white"
+      >
+        <path d="M0 0h24v24H0V0z" fill="none" />
+        <path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z" />
+      </svg>
     </button>
 
     <!-- START: BRAND SECTION -->

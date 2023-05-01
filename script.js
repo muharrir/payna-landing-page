@@ -2,7 +2,7 @@
 const moonIcon = document.querySelector(".moon");
 const sunIcon = document.querySelector(".sun");
 
-//Theme Vars
+// Theme Vars
 // const userTheme = localStorage.getItem("theme");
 
 //Icon Toggling
@@ -20,7 +20,7 @@ const themeSwitch = () => {
     return;
   }
   document.documentElement.classList.add("dark");
-  //   localStorage.setItem("theme", "dark");
+  // localStorage.setItem("theme", "dark");
   iconToggle();
 };
 
@@ -65,3 +65,42 @@ submitButton.addEventListener("click", () => {
     alert("Silahkan masukkan email anda");
   }
 });
+
+//Navbar Active
+const dataMenu = [
+  {
+    id: 1,
+    name: "Home",
+  },
+  {
+    id: 2,
+    name: "Features",
+  },
+  {
+    id: 3,
+    name: "Showcase",
+  },
+  {
+    id: 4,
+    name: "Pricing",
+  },
+];
+
+let activeMenu = 1;
+function showMenu() {
+  const listMenuElm = document.getElementById("list-menu");
+  listMenuElm.innerHTML = "";
+
+  dataMenu.map((item) => {
+    listMenuElm.innerHTML += `<a href="#" class="${
+      activeMenu == item.id ? "font-bold" : ""
+    }" onClick="onClickMenu('${item.id}')">${item.name}</a>`;
+  });
+}
+
+function onClickMenu(id) {
+  activeMenu = id;
+  showMenu();
+}
+
+showMenu();
