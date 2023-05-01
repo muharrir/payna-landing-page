@@ -59,12 +59,9 @@ const email = document.getElementById("email");
 const submitButton = document.getElementById("emailSubmit");
 
 submitButton.addEventListener("click", () => {
-  alert(`Terimakasi ${email.value} sudah input email kamu`);
+  if (email.value.length > 0) {
+    alert(`Terimakasih ${email.value} sudah input email kamu`);
+  } else {
+    alert("Silahkan masukkan email anda");
+  }
 });
-
-//Navbar
-const home = document.getElementById("home");
-const features = document.getElementById("features");
-const showcase = document.getElementById("showcase");
-const pricing = document.getElementById("pricing");
-const isActive = true;
